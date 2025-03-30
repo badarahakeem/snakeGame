@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber&Code | Snake Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="score">Score: <span id="score">0</span></div>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div class="game-over" id="gameOver">
+        <h2>Game Over</h2>
+        <button onclick="restartGame()">Rejouer</button>
+      </div>
+      <div class="controls">
+        <button onclick="changeDirection('UP')">⬆️</button>
+        <button onclick="changeDirection('LEFT')">⬅️</button>
+        <button onclick="changeDirection('DOWN')">⬇️</button>
+        <button onclick="changeDirection('RIGHT')">➡️</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
